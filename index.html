@@ -11,29 +11,47 @@
 </head>
 <body>
     <div class="nav">
+        <ul class="tabs">
+            <li>Catalog</li>
+            <li>Trending</li>
+            <li>Repairment</li>
+        </ul>
         <p class="nav-title">INsight</p>
         <ul class="auth">
             <li>Sign in</li>
             <li>Register</li>
         </ul>
     </div>
-    <div id="intro" class="carousel slide" data-bs-ride="carousel">
+    <div id="intro" class="carousel slide" data-ride="carousel">
+        <ol>
+            <li data-target="#intro" data-slide-to="0" class="active"></li>
+            <li data-target="#intro" data-slide-to="1"></li>
+            <li data-target="#intro" data-slide-to="2"></li>
+        </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="content-container">
                     <p>view purchase products in 3D</p>
                     <br/>
-                    <button>GO</button>
+                    <button class="btn">GO</button>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="content-container">
-                    <p>view purchase products in 3D</p>
+                    <p>view purchase products in 4D</p>
                     <br/>
                     <button>GO</button>
                 </div>
             </div>
         </div>
+        <a href="#intro" class="carousel-control-prev" role="button" data-slide="prev">
+            <span class="sr-only">Previous</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a href="#intro" class="carousel-control-next" role="button" data-slide="next">
+            <span class="sr-only">Previous</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
     </div>
 </body>
 </html>

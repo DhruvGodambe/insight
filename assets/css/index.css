@@ -14,12 +14,26 @@ li {
     display: flex;
 }
 
+.nav .tabs {
+    position: relative;
+    left: 2%;
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav .tabs li {
+    margin: 0 10px;
+}
+
 .nav .nav-title {
     font-size: 35px;
     padding: 20px 0;
     margin: 0;
     position: relative;
-    left: 45%;
+    left: 22%;
     letter-spacing: 2px;
 }
 
@@ -28,7 +42,7 @@ li {
     margin: 0;
     flex-direction: row;
     position: relative;
-    left: 75%;
+    left: 50%;
     padding: 0;
     align-items: center;
 }
@@ -46,25 +60,35 @@ li {
 }
 
 .carousel {
-    background: rgb(182, 182, 182);
+    background: rgb(219, 219, 219);
 }
 
 .carousel-inner .content-container {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     /* background: rgb(218, 218, 218); */
     background-image: url("../images/temp.jpeg");
     text-align: center;
     padding-top: 20%;
-    background-position: center;
-    background-size: contain;
+    background-position: bottom;
+    background-size: cover;
     background-repeat: no-repeat;
+    min-height: 600px;
+}
+
+.carousel-item {
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
 }
 
 .content-container p {
     margin: 0;
     padding: 5px;
     font-size: 25px;
+    letter-spacing: 3px;
     font-weight: bold;
     color: white;
     display: inline-block;
