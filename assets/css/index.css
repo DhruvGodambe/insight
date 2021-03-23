@@ -1,3 +1,4 @@
+/* global css */
 body, html {
     margin: 0;
     padding: 0;
@@ -7,6 +8,8 @@ body, html {
 li {
     list-style-type: none;
 }
+
+/* navbar section */
 
 .nav {
     text-align: center;
@@ -37,7 +40,7 @@ li {
     padding: 20px 0;
     margin: 0;
     position: relative;
-    left: 22%;
+    left: 25%;
     letter-spacing: 2px;
 }
 
@@ -63,6 +66,8 @@ li {
     color: white;
 }
 
+/* Carousel section  */
+
 .carousel {
     background: rgb(219, 219, 219);
 }
@@ -74,18 +79,10 @@ li {
     background-image: url("../images/temp.jpeg");
     text-align: center;
     padding-top: 20%;
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 600px;
-}
-
-.carousel-item {
-    display: none;
-}
-
-.carousel-item.active {
-    display: block;
 }
 
 .content-container p {
@@ -109,6 +106,8 @@ li {
     box-shadow: 0 0 5px black;
     color: white;
 }
+
+/* Trending section */
 
 .trending {
     margin: 20px 0;
@@ -171,6 +170,8 @@ li {
     width: 100px;
     margin: 0 auto;
 }
+
+/* Catalog section */
 
 .catalog {
     margin: 20px 0;

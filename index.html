@@ -22,11 +22,11 @@
             <li>Register</li>
         </ul>
     </div>
-    <div id="intro" class="carousel slide" data-ride="carousel">
+    <div id="intro" class="carousel slide" data-bs-ride="carousel">
         <ol class="carousel-indicators">
-            <li data-target="#intro" data-slide-to="0" class="active"></li>
-            <li data-target="#intro" data-slide-to="1"></li>
-            <li data-target="#intro" data-slide-to="2"></li>
+            <li data-bs-target="#intro" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#intro" data-bs-slide-to="1"></li>
+            <li data-bs-target="#intro" data-bs-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -43,15 +43,22 @@
                     <button>GO GO</button>
                 </div>
             </div>
+            <div class="carousel-item">
+                <div class="content-container">
+                    <p>view purchase products in 5D</p>
+                    <br/>
+                    <button>GO GO GO</button>
+                </div>
+            </div>
         </div>
-        <a href="#intro" class="carousel-control-prev " role="button" data-slide="prev" data-target="#intro">
-            <span class="sr-only">Previous</span>
+        <a class="carousel-control-prev" href="#intro" role="button" data-bs-target="#intro"  data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </a>
-        <a href="#intro" class="carousel-control-next" role="button" data-slide="next" data-target="#intro">
-            <span class="sr-only">Previous</span>
+            <span class="visually-hidden"></span>
+          </a>
+          <a class="carousel-control-next" href="#intro" role="button" data-bs-target="#intro"  data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </a>
+            <span class="visually-hidden"></span>
+          </a>
     </div>
     <div class="trending">
         <h1>Trending</h1>
