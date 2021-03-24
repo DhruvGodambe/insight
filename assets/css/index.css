@@ -22,7 +22,7 @@ li {
 }
 
 .nav .tabs {
-    position: relative;
+    position: sticky;
     left: 2%;
     display: flex;
     align-items: center;
@@ -38,9 +38,7 @@ li {
 .nav .nav-title {
     font-size: 35px;
     padding: 20px 0;
-    margin: 0;
-    position: relative;
-    left: 25%;
+    margin: 0 auto;
     letter-spacing: 2px;
 }
 
@@ -48,10 +46,17 @@ li {
     display: flex;
     margin: 0;
     flex-direction: row;
-    position: relative;
-    left: 50%;
+    position: sticky;
     padding: 0;
     align-items: center;
+}
+
+.nav .mobile-dropdown {
+    display: none;
+}
+
+.mobile-list {
+    display: none;
 }
 
 .auth li {
@@ -178,7 +183,7 @@ li {
 /* Catalog section */
 
 .catalog {
-    margin: 20px 0;
+    margin: 80px 0;
 }
 
 .catalog h1 {
@@ -266,4 +271,120 @@ li {
     font-size: 25px;
     letter-spacing: 2px;
     margin: 20px auto 100px;
+}
+
+@media only screen and (max-width: 720px) {
+    .nav .tabs {
+        display: none;
+    }
+
+    .nav .auth {
+        display: none;
+    }
+
+    .nav .nav-title {
+        position: static;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+
+    .nav {
+        align-items: center;
+    }
+
+    .nav .mobile-dropdown {
+        display: block;
+        margin: auto;
+        position: absolute;
+        left: 90%;
+        color: black;
+        width: 10%;
+        font-size: 20px;
+        background: rgb(246, 246, 246);
+        border-radius: 50%;
+    }
+
+    .mobile-list {
+        display: block;
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s ease-in;
+    }
+
+    .mobile-list .mobile-tabs li {
+        font-size: 18px;
+        padding: 10px;
+        border-bottom: 1px solid rgb(219, 218, 216);
+    }
+
+    /* Carousel section  */
+
+    .carousel .content-container {
+        min-height: 200px;
+    }
+
+    .carousel .content-container p {
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+
+    .carousel .content-container button {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    /* Trending section  */
+
+    .trending h1 {
+        font-size: 20px;
+    }
+
+    .trending .trending-container div {
+        width: 46%;
+        font-size: 16px;
+    }
+
+    .trending .viewmore {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    /* Catalog section  */
+
+    .catalog {
+        margin: 4   0px 0;
+    }
+
+    .catalog h1 {
+        font-size: 20px;
+    }
+
+    .catalog .catalog-container .left div {
+        padding: 10px;
+    }
+
+    .catalog .catalog-container .right {
+        width: 70%;
+    }
+
+    .catalog .catalog-container .right div {
+        width: 90%;
+        margin: 5% auto;
+    }
+
+    /* Repair section  */
+
+    .repair h1 {
+        font-size: 20px;
+        padding: 40px 0 0 0;
+    }
+
+    .repair button {
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin: 20px auto 40px;
+    }
 }
